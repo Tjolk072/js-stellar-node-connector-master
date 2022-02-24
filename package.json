@@ -1,0 +1,57 @@
+{
+  "name": "@stellarbeat/js-stellar-node-connector",
+  "version": "3.3.0",
+  "description": "Connect and interact with nodes in the Stellar Network over the tcp protocol",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stellarbeat/js-stellar-node-connector.git"
+  },
+  "scripts": {
+    "preversion": "yarn run build",
+    "build": "tsc --declaration",
+    "examples:connect": "npm run build; node examples/connect",
+    "test": "jest"
+  },
+  "types": "lib/index.d.ts",
+  "files": [
+    ".env.dist",
+    "readme.md",
+    "lib/**",
+    "LICENSE",
+    "examples/**"
+  ],
+  "main": "lib/index.js",
+  "author": "pieterjan84@github",
+  "license": "MIT",
+  "node": "^12.20.0 || ^14.13.1 || >=16.0.0",
+  "dependencies": {
+    "async": "^3.2.0",
+    "blocked-at": "^1.2.0",
+    "dotenv": "^6.1.0",
+    "js-xdr": "^1.3.0",
+    "lru-cache": "^6.0.0",
+    "neverthrow": "^4.2.2",
+    "pino": "^6.12.0",
+    "sodium-native": "^3.2.1",
+    "stellar-base": "^5.3.2",
+    "workerpool": "^6.1.5",
+    "yn": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/async": "^3.2.7",
+    "@types/jest": "^27.0.0",
+    "@types/lru-cache": "^5.1.0",
+    "@types/pino": "^6.3.9",
+    "@types/sodium-native": "^2.3.5",
+    "@types/workerpool": "^6.0.0",
+    "@types/yn": "^3.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "eslint": "^7.32.0",
+    "jest": "^27.0.6",
+    "np": "^7.5.0",
+    "prettier": "^2.4.1",
+    "ts-jest": "^27.0.4",
+    "typescript": "^4.4.3"
+  }
+}

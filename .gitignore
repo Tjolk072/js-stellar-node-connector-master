@@ -1,0 +1,9 @@
+.idea/
+node_modules
+dist/
+lib/
+flow-typed/
+.env
+.clinic/
+build/
+.DS_Store
